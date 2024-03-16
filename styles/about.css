@@ -1,0 +1,170 @@
+/* main */
+
+main {
+    background: linear-gradient(to bottom right, #45b8e6, #cb46ec);
+    font-family: lemon;
+    color: #ffffff;
+}
+
+
+/* about */
+.about {
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.about h1 {
+    padding-top: 2rem;
+    font-weight: 300;
+    margin-top: 0;
+
+}
+
+.about h3 {
+    text-align: center;
+    padding: 4rem 2rem 1rem 2rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.about a {
+    color: #ffffff;
+}
+
+
+
+/* hobby */
+.hobby h1 {
+    text-align: center;
+}
+
+.hobby-wrapper {
+    width: 288px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.hobby-map img {
+    width: 288px;
+    height: 174.5px;
+    object-fit: fill;
+}
+
+
+/* pin1 */
+.pin1 {
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 9rem;
+}
+
+#pin1.active {
+    display: none;
+}
+
+#x1 {
+    width: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#x1.active {
+    display: block;
+}
+
+/* pin2 */
+.pin2 {
+    width: 2rem;
+    position: absolute;
+    top: 16rem;
+    left: 9rem;
+}
+
+#pin2.active {
+    display: none;
+}
+
+#x2 {
+    width: 2rem;
+    position: absolute;
+    top: 11.5rem;
+    right: 0;
+    display: none;
+}
+
+#x2.active {
+    display: block;
+}
+
+/* pin3 */
+.pin3 {
+    width: 2rem;
+    position: absolute;
+    top: 27rem;
+    left: 4.5rem;
+}
+
+#pin3.active {
+    display: none;
+}
+
+#x3 {
+    width: 2rem;
+    position: absolute;
+    top: 23rem;
+    right: 0;
+    display: none;
+}
+
+#x3.active {
+    display: block;
+}
+
+.pic-container img {
+    display: none;
+}
+
+@media (min-width: 50em) {
+
+    #map2,
+    #map3 {
+        display: none;
+    }
+
+    .hobby-wrapper {
+        width: 720px;
+    }
+
+    #map1 {
+        width: 100%;
+    }
+
+    .pin1 {
+        top: 5rem;
+        left: 23rem;
+    }
+
+    .pin2 {
+        top: 13rem;
+        left: 27rem;
+    }
+
+    .pin3 {
+        top: 15rem;
+        left: 12rem;
+    }
+
+    #x2.active {
+        top: 0;
+        right: 0;
+    }
+
+    #x3.active {
+        top: 0;
+        right: 0;
+    }
+}

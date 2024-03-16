@@ -1,0 +1,520 @@
+/* user width evaluatior */
+#warning {
+    display: none;
+    text-align: center;
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+/* party background */
+body {
+    font-family: merriweather sans;
+    width: 100vw;
+    height: 100vh;
+    animation: changeColor 10s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #27355e;
+    }
+
+    25% {
+        background-color: #744a85;
+    }
+
+    50% {
+        background-color: #9c4a41;
+    }
+
+    75% {
+        background-color: #365856;
+    }
+
+    100% {
+        background-color: #27355e;
+    }
+}
+
+/* intro display */
+.intro-display {
+    width: 70em;
+    margin: 0 auto;
+    position: relative;
+}
+
+.intro-display.active {
+    display: none;
+}
+
+.wof-bg {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wof-bg img {
+    opacity: 90%;
+}
+
+/* button animation */
+.intro-display button {
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    box-shadow: #ffffff 5px 5px 5px;
+    transition: transform 0.3s ease;
+    animation: floating 1.5s ease-in-out infinite;
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#inst-btn {
+    background-color: #95ec95;
+    position: absolute;
+    bottom: 4rem;
+    left: 20%;
+    ;
+}
+
+#start-btn {
+    background-color: #e74c3c;
+    position: absolute;
+    bottom: 4rem;
+    right: 20%;
+}
+
+/* instructions */
+.inst-list li {
+    padding-bottom: 0.75rem;
+}
+
+#inst-box {
+    background-color: #cecdcd;
+    width: 40rem;
+    height: 28rem;
+    position: absolute;
+    top: 5rem;
+    left: 22%;
+    border-radius: 20px;
+    box-shadow: #ffffff 5px 5px 5px;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    overflow: hidden;
+    transition: 0.5s ease-out;
+    max-height: 0;
+}
+
+#inst-box.active {
+    max-height: 28rem;
+}
+
+/* phase1 - warm up game */
+.game-on {
+    width: 70em;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+
+.game-on.active {
+    display: block;
+}
+
+.chalkboard {
+    width: 100%;
+}
+
+/* username */
+#name-container {
+    width: 20rem;
+    height: 6rem;
+    background-color: #d1d1d1;
+    border-radius: 20px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+    box-shadow: #ffffff 5px 5px 5px;
+}
+
+#name-container.active {
+    display: none;
+}
+
+#name-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+
+/* warmup game board */
+#warmup {
+    display: none;
+}
+
+#warmup.active {
+    display: block;
+    width: 60rem;
+    height: 30rem;
+    background-color: transparent;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    text-align: center;
+    color: #ffffff;
+}
+
+#warmup h1 {
+    font-size: 3rem;
+}
+
+#puzzle {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    word-spacing: 1rem;
+    padding: 2rem;
+}
+
+#guess {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#guess.active {
+    display: none;
+}
+
+/* alphabets */
+#letter-wrapper {
+    width: 50rem;
+    display: block;
+}
+
+#letter-wrapper.active {
+    display: none;
+}
+
+.letter-btn {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.125rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.letter-btn:hover,
+.letter-btn:active,
+.letter-btn.letter-used {
+    background-color: #e9adad;
+}
+
+
+/* status bar */
+.status-bar {
+    background-color: #e7c8f3;
+    border-radius: 20px;
+    width: 12rem;
+    height: 8rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #000000 5px 5px 5px;
+}
+
+.status-bar div {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: #000000 solid 1px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    width: 10rem;
+    overflow: hidden;
+}
+
+/* quit button */
+#quit-btn {
+    background-color: #e74c3c;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    box-shadow: #000000 5px 5px 5px;
+    color: #ffffff;
+}
+
+#quit-btn:hover {
+    background-color: #e7c8f3;
+}
+
+/* next button */
+#next-btn {
+    display: none;
+    background-color: #68b5f5;
+    position: absolute;
+    bottom: 5rem;
+    right: 40%;
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    box-shadow: #000000 5px 5px 5px;
+    color: #ffffff;
+}
+
+#next-btn.active {
+    display: block;
+}
+
+
+/* wheel style */
+#wheel-display {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 28%;
+}
+
+#wheel-display.active {
+    display: block;
+}
+
+#wheel {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: #000000 0rem 0rem 10rem;
+}
+
+.segment {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    transform-origin: 50% 50%;
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+    font-size: 1.5rem;
+}
+
+.segment:nth-child(1) {
+    background-color: #c2d8eb;
+}
+
+.segment:nth-child(2) {
+    background-color: #dda9ec;
+}
+
+.segment:nth-child(3) {
+    background-color: #c2d8eb;
+}
+
+.segment:nth-child(4) {
+    background-color: #dda9ec;
+}
+
+
+/* spin button */
+#spin-btn {
+    display: none;
+    background-color: #68b5f5;
+    position: absolute;
+    bottom: 5rem;
+    right: 40%;
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    box-shadow: #000000 5px 5px 5px;
+    color: #ffffff;
+}
+
+#spin-btn.active {
+    display: block;
+}
+
+
+/* final word game - mostly repeating warmup game styling */
+#final-game {
+    display: none;
+}
+
+#final-game.active {
+    display: block;
+    width: 60rem;
+    height: 30rem;
+    background-color: transparent;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    text-align: center;
+    color: #ffffff;
+}
+
+#final-game h1 {
+    font-size: 3rem;
+}
+
+#final-puzzle {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    word-spacing: 1rem;
+    padding: 2rem;
+}
+
+#final-guess {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#final-guess.active {
+    display: none;
+}
+
+/* alphabets */
+#final-letter-wrapper {
+    width: 50rem;
+    display: block;
+}
+
+#final-letter-wrapper.active {
+    display: none;
+}
+
+.final-letter-btn {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.125rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.final-letter-btn:hover,
+.final-letter-btn:active,
+.final-letter-btn.letter-used {
+    background-color: #e9adad;
+}
+
+#again-btn {
+    display: none;
+    background-color: #68b5f5;
+    position: absolute;
+    bottom: 5rem;
+    right: 40%;
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    box-shadow: #000000 5px 5px 5px;
+    color: #ffffff;
+}
+
+#again-btn.active {
+    display: block;
+}
+
+/* home button */
+#all-stop {
+    position: relative;
+}
+
+#home-btn {
+    position: absolute;
+    top: 2rem;
+    left: 5%;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+@media (min-width: 75rem) {
+    #home-btn {
+        left: 15%;
+    }
+}
+
+@media (min-width: 95rem) {
+    #home-btn {
+        left: 25%;
+    }
+}
+
+/* music control */
+.music-wrapper {
+    position: fixed;
+    top: 1rem;
+    right: 10%;
+}
+
+.music-wrapper button {
+    margin-top: 2rem;
+    border: #f591ff solid 2px;
+    border-radius: 10px;
+}
+
+.music-wrapper button img {
+    width: 3rem;
+    height: 3rem;
+}
+
+#music-on {
+    display: none;
+}
+
+#music-on.active {
+    display: block;
+}
+
+#music-off {
+    display: block;
+}
+
+#music-off.active {
+    display: none;
+}
+
+@media (min-width: 75rem) {
+    .music-wrapper {
+        right: 15%;
+    }
+}
+
+@media (min-width: 95rem) {
+    .music-wrapper {
+        right: 23%;
+    }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of fortune</title>
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- scripts -->
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/idioms.js" defer></script>
+    <script src="./scripts/wordgame.js" defer></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body class="concert-bg">
+    <!-- wrapper used for inappropriate user interfaces -->
+    <div id="all-stop">
+        <!-- intro display -->
+        <section class="intro-display" id="intro-phase">
+            <!-- intro background and buttons -->
+            <div class="wof-bg">
+                <img src="./images/intro-bg.png" alt="background image for wheel of fortune welcome page">
+                <button id="inst-btn">INSTRUCTION</button>
+                <button id="start-btn">START</button>
+            </div>
+
+            <!-- instructions -->
+            <div id="inst-box">
+                <ol class="inst-list">
+                    <li>Click the Play button to start playing</li>
+                    <li>Input your username</li>
+                    <li>In phase 1, you will play a warm-up game. You will get 100 for each letter you guessed correctly.</li>
+                    <li>In phase 2, you will spin the wheel to get a chance to multiply your current prize with different number of guesses. </li>
+                    <li>In final phase, you will have a chance to multiply your current prize if you solve the puzzel correctly. </li>
+                    <li>Then you will get your final prize!! Start playing now!</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- game start -->
+        <section class="game-on" id="game-on">
+            <img class="chalkboard" src="./images/chalkboard.png" alt="chalkboard background image for word games">
+
+            <!-- get username -->
+            <div id="username-box">
+                <div id="name-container">
+                    <form id="name-form" action="" method="">
+                        <label for="username">Input player name to play</label>
+                        <input type="text" id="username" name="username" required>
+                        <input id="submit" type="submit" value="Play">
+                    </form>
+                </div>
+            </div>
+
+            <!-- phase1 - warm up game display -->
+            <div id="warmup">
+                <h1>Warm-up Game
+                </h1>
+
+                <!-- puzzel board -->
+                <div id="puzzle">
+                </div>
+
+                <!-- chances left -->
+                <div id="guess">Remaining guesses: <span id="chance-left"></span>
+                </div>
+
+                <!-- alphabets -->
+                <div class="letter-wrapper" id="letter-wrapper">
+                        <button class="letter-btn">A</button>
+                        <button class="letter-btn">B</button>
+                        <button class="letter-btn">C</button>
+                        <button class="letter-btn">D</button>
+                        <button class="letter-btn">E</button>
+                        <button class="letter-btn">F</button>
+                        <button class="letter-btn">G</button>
+                        <button class="letter-btn">H</button>
+                        <button class="letter-btn">I</button>
+                        <button class="letter-btn">J</button>
+                        <button class="letter-btn">K</button>
+                        <button class="letter-btn">L</button>
+                        <button class="letter-btn">M</button>
+                        <button class="letter-btn">N</button>
+                        <button class="letter-btn">O</button>
+                        <button class="letter-btn">P</button>
+                        <button class="letter-btn">Q</button>
+                        <button class="letter-btn">R</button>
+                        <button class="letter-btn">S</button>
+                        <button class="letter-btn">T</button>
+                        <button class="letter-btn">U</button>
+                        <button class="letter-btn">V</button>
+                        <button class="letter-btn">W</button>
+                        <button class="letter-btn">X</button>
+                        <button class="letter-btn">Y</button>
+                        <button class="letter-btn">Z</button>
+                </div>
+            </div>
+
+            <!-- button to phase02 -->
+            <button id="next-btn">Next</button>
+
+            <!-- status display and quit button -->
+            <div class="status-bar">
+                <div id="status-username">Player</div>
+                <div>$ <span id="status-prize">0</span></div>
+            </div>
+            <button id="quit-btn">QUIT</button>
+
+            <!-- phase 2 - wheel -->
+            <div id="wheel-display">
+                <div id="wheel">
+                    <div class="segment" style="transform: rotate(0deg);">X2 &#38; 7 Chances </div>
+                    <div class="segment" style="transform: rotate(90deg);">X3 &#38; 4 Chances </div>
+                    <div class="segment" style="transform: rotate(180deg);">X4 &#38; 6 Chances </div>
+                    <div class="segment" style="transform: rotate(270deg);">X5 &#38; 5 Chances </div>
+                </div>
+            </div>
+            <button id="spin-btn">Spin</button>
+
+            <!-- phase 3 - final word game -->
+            <div id="final-game">
+                <h1>Final Game
+                </h1>
+
+                <!-- puzzel board -->
+                <div id="final-puzzle">
+                </div>
+
+                <!-- chances left -->
+                <div id="final-guess">Remaining guesses: <span id="final-chance-left"></span>
+                </div>
+
+                <!-- alphabets -->
+                <div class="final-letter-wrapper" id="final-letter-wrapper">
+                        <button class="final-letter-btn">A</button>
+                        <button class="final-letter-btn">B</button>
+                        <button class="final-letter-btn">C</button>
+                        <button class="final-letter-btn">D</button>
+                        <button class="final-letter-btn">E</button>
+                        <button class="final-letter-btn">F</button>
+                        <button class="final-letter-btn">G</button>
+                        <button class="final-letter-btn">H</button>
+                        <button class="final-letter-btn">I</button>
+                        <button class="final-letter-btn">J</button>
+                        <button class="final-letter-btn">K</button>
+                        <button class="final-letter-btn">L</button>
+                        <button class="final-letter-btn">M</button>
+                        <button class="final-letter-btn">N</button>
+                        <button class="final-letter-btn">O</button>
+                        <button class="final-letter-btn">P</button>
+                        <button class="final-letter-btn">Q</button>
+                        <button class="final-letter-btn">R</button>
+                        <button class="final-letter-btn">S</button>
+                        <button class="final-letter-btn">T</button>
+                        <button class="final-letter-btn">U</button>
+                        <button class="final-letter-btn">V</button>
+                        <button class="final-letter-btn">W</button>
+                        <button class="final-letter-btn">X</button>
+                        <button class="final-letter-btn">Y</button>
+                        <button class="final-letter-btn">Z</button>
+                </div>
+            </div>
+            <button id="again-btn">PLAY AGAIN</button>
+        </section>
+
+        <a id="home-btn" href="../index.html"><img src="./images/favicon/favicon-32x32.png" alt="back to home page button"></a>
+
+        <!-- background music -->
+        <div class="music-wrapper">
+            <button id="music-on"><img src="./images/volume-o.svg" alt="a display when background music is on"></button>
+            <button id="music-off"><img src="./images/volume-x.svg" alt="a display when background music is off"></button>
+        </div>
+        <audio src="./media/wof-bm.mp3" type="audio/mp3" id="music">
+            Use another browser to play audio.
+        </audio>
+    </div>
+
+    <!-- warning msg -->
+    <div id="warning">
+        Sorry, please resize your browser between 768px to 1920px to play properly!
+    </div>
+    
+</body>
+</html>

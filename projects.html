@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Kim</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+
+    <!-- font-black han -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <!-- font-montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+     <!-- seo -->
+     <meta name="Description" content="Introducing projects and myself as a front-end web developer.">
+
+    <!-- scripts -->
+    <script src="./scripts/projects.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="site-nav">
+            <a class="nav-logo" href="index.html"><img src="./images/favicon/android-chrome-192x192.png" alt="navbarlogo"></a>
+
+            <!-- hamburger toggle menu -->
+            <a href="#" class="toggle-btn" id="toggle-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
+
+            <ul class="dropdown-menu" id="dropdown-menu">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <section class="project-gallery">
+        <h1>PROJECTS</h1>
+        
+        <h2 id="frontend">Frontend</h2>
+        <div class="project-wrapper">
+            <a href="#wof" class="container">
+                <article class="project">
+                    <img src="./images/wof-cover.png" alt="javascript game project cover picture" />
+                    <div class="classify">
+                        <span>JS</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <h3>Javascript Mini Game</h3>
+                </article>
+            </a>
+            <a href="#task-list" class="container">
+                <article class="project">
+                    <img src="./images/tasklist-cover.png" alt="react task-list project cover picture" />
+                    <div class="classify">
+                        <span>React</span>
+                        <span>CSS</span>
+                    </div>
+                    <h3>Task List</h3>
+                </article>
+            </a>
+            <a href="#tailwind" class="container">
+                <article class="project">
+                    <img src="./images/tailwind-cover.png" alt="tailwind css project cover picture" />
+                    <div class="classify">
+                        <span>Tailwind</span>
+                        <span>HTML</span>
+                    </div>
+                    <h3>Tailwind Github Blog</h3>
+                </article>
+            </a>
+            <a href="#sass" class="container">
+                <article class="project">
+                    <img src="./images/sass-cover.png" alt="sass group project cover picture" />
+                    <div class="classify">
+                        <span>Sass</span>
+                        <span>HTML</span>
+                    </div>
+                    <h3>Food Explore Website</h3>
+                </article>
+            </a>
+            <a href="#country" class="container">
+                <article class="project">
+                    <img src="images/country-website.jpg" alt="project cover picture" />
+                    <div class="classify">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <h3>Country Website</h3>
+                </article>
+            </a>
+        </div>
+        <h2 id="design">UX / UI</h2>
+        <div class="project-wrapper">
+            <a href="#figma" class="container">
+                <article class="project">
+                    <img src="./images/figma-cover.png" alt="figma prototype project cover picture" />
+                    <div class="classify">
+                        <span>Figma</span>
+                    </div>
+                    <h3>Figma prototype website</h3>
+                </article>
+            </a>
+            <a href="#photoshop" class="container">
+                <article class="project">
+                    <img src="./images/ps-cover.png" alt="adobe photoshop hi-fi wireframe project cover picture" />
+                    <div class="classify">
+                        <span>Adobe PS</span>
+                        <span>Adobe XD</span>
+                    </div>
+                    <h3>Photoshop Wireframe</h3>
+                </article>
+            </a>
+        </div>
+        <h2 id="backend">Backend / DB</h2>
+        <div class="project-wrapper">
+            <a href="#Shopify" class="container">
+                <article class="project">
+                    <img src="./images/project-cover.jpg" alt="php and mysql project cover picture" />
+                    <div class="classify">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <h3>Online Shop</h3>
+                </article>
+            </a>
+        </div>
+      </section>
+      <section class="project-detail">
+        <h1>Project Details</h1>
+        <div id="wof" class="detail-wrapper">
+            <article class="detail-text">
+                <h2>JAVASCRIPT MINI GAME</h2>
+                <div>
+                    <span>JS</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                <p>
+                    <strong>Project Overview:</strong> A Vanilla Javascript based mini-game inspired from Wheel of fortune and hangman game. Wireframes were crafted through Figma. It runs only in width of 760px to 1920px. 
+                </p>
+                <p>
+                    <strong>What I've learned:</strong> I learned a lot while I was working on my game, especially fetching data from JSON files, applying advanced animations, and JavaScript Logic Thinking. Especially, I could understand the idea of DOM manipulation using getElementById or querySelectorAll. I got used to using event handlers. Also, understood the use of string and array manipulation. There will always be something that I do not know, so I chose to keep learning all the time. 
+                    Do not worry about making mistakes. We learned from mistakes too.
+                </p>
+            </article>
+            <div class="detail-image">
+                <img src="./images/wof-600x380.png" alt="js minigame detailed picture">
+                <a href="./wof/index.html" target="blank">PLAY</a>
+            </div>
+        </div>
+        <div id="task-list" class="detail-wrapper">
+            <article class="detail-text">
+                <h2>REACT TASK LIST</h2>
+                <div>
+                    <span>React</span>
+                    <span>CSS</span>
+                </div>
+                <p>
+                    <strong>Project Overview:</strong> A reponsive daily to-do list light program built with react and vanilla css. Used only fundamental structures and hooks of react. It was a good experience to get to know new libraury. 
+                </p>
+                <p>
+                    <strong>What I've learned:</strong> I felt the importance of learning vanilla javascript again. It will be a challenge to learn javascript librauries such as react, vue, svelte if the users don't understand vanilla javascript. I enjoyed using hooks(useState, useEffect). It was new to learn conditional rendering and list rendering. 
+                </p>
+            </article>
+            <div class="detail-image">
+                <img src="./images/tasklist-detail.png" alt="react tasklist program detailed picture">
+                <a href="https://dannykim113.github.io/github.io/" target="blank">TRY IT</a>
+            </div>
+        </div>
+        <div id="tailwind" class="detail-wrapper">
+            <article class="detail-text">
+                <h2>TAILWIND GITHUB BLOG</h2>
+                <div>
+                    <span>Tailwind</span>
+                    <span>HTML</span>
+                </div>
+                <p>
+                    <strong>Project Overview:</strong> Creating a responsive webpage that is introducing Tailwind with github blog styles. Tried to build a same webpage twice, one is with vanilla css while another is with tailwind css. 
+                </p>
+                <p>
+                    <strong>What I've learned:</strong> I could read what other developers prefers on styling. Also, I could have broaden the knowledge about various librauries and frameworks are existing, such as Bootstrap, Sass, and typescript. Tailwind has pretty straightforward strengths. Two things I loved the most about tailwind were less typo and saving time on class names. 
+                </p>
+            </article>
+            <div class="detail-image">
+                <img src="./images/tailwind-detail.png" alt="tailwind blog detailed picture">
+                <a href="https://cchan395.github.io/group2/" target="blank">VISIT</a>
+            </div>
+        </div>
+        <div id="sass" class="detail-wrapper">
+            <article class="detail-text">
+                <h2>FOOD EXPLORE WITH SASS</h2>
+                <div>
+                    <span>Sass</span>
+                    <span>HTML</span>
+                </div>
+                <p>
+                    <strong>Project Overview:</strong> Creating a reponsive webpage about food with sass. Trying various styling frameworks is expanding my minds of learning.
+                </p>
+                <p>
+                    <strong>What I've learned:</strong> Learning Sass introduced me to features like variables, nesting, mixins, inheritance, and functions. I especially spend more time using mixins a lot. These allowed me to learn about organizing, maintainence, and consistence. 
+                </p>
+            </article>
+            <div class="detail-image">
+                <img src="./images/sass-detail.png" alt="sass webpage detailed picture">
+                <a href="#sass" target="blank">VISIT</a>
+            </div>
+        </div>
+        <div id="country" class="detail-wrapper">
+            <article class="detail-text">
+                <h2>COUNTRY WEBSITE</h2>
+                <div>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                <p>
+                    <strong>Project Overview:</strong> A simple website that introduces about Korea, the country of my birth. The first website I've made in my life. 
+                </p>
+                <p>
+                    <strong>What I've learned:</strong> I could unserstand of basic concepts of programming. Became friendly with the fundamentals of web development, and allowed me to create and structure web pages. Enjoyed to use links images, tables. 
+                </p>
+            </article>
+            <div class="detail-image">
+                <img src="./images/country-detail.png" alt="country website detailed picture">
+                <a href="./country-website/index.html" target="blank">VISIT</a>
+            </div>
+        </div>
+        <div id="figma" class="detail-wrapper">
+            <article class="detail-text">
+                <h2>FIGMA PROTOTYPE MOCKUP</h2>
+                <div>
+                    <span>Figma</span>
+                </div>
+                <p>
+                    <strong>Project Overview:</strong> A prototype mockup of a movie database website created with figma. 12 interactive artboards are created, 4 artboards for desktop view, 4 artboards for table view, and 4 more for mobile view. Using figma could be a critical skill in the situation of collaboration. Understanding UI/UX fundamentals extremely help developers to figure out the whole process of web publishing. Prototyping makes developers to understand which functions they would add to the website easily. 
+                </p>
+                <p>
+                    <strong>What I've learned:</strong> I found out figma makes people can do real-time collaboration and enabling multiple users to work on a design simultaneously. Figma also offers a wide range of plugins to extend functionality, I enjoyed using useful plugins such as iconify, and 66frameworks. I could create all prototype functions I imagined. All tools in figma are very user-friendly. These features make it a versatile tool for individual designers and teams alike, streamlining the design process and facilitating easy sharing and feedback.
+                </p>
+            </article>
+            <div class="detail-image">
+                <img src="./images/figma-detail.png" alt="figma prototype detailed picture">
+                <a href="https://www.figma.com/file/h4vz18UgSboPu8zysIkiN3/interactive-prototyple?type=design&node-id=0%3A1&mode=design&t=AyBbmoD1Z5SdTy7W-1" target="blank">TRY IT</a>
+            </div>
+        </div>
+        <div id="photoshop" class="detail-wrapper">
+            <article class="detail-text">
+                <h2>ADOBE PHOTOSHOP WIREFRAME</h2>
+                <div>
+                    <span>Adobe PS</span>
+                </div>
+                <p>
+                    <strong>Project Overview:</strong> A Hi-fi wireframe mockup of a website created with adobe photoshop. Interactive designs are created, 4 artboards for desktop view and 4 artboards for mobile view. Using photoshop has downside which is difficult to use for collaboration. However, adobe photoshop makes you to achieve high skilled tasks efficiently. 
+                </p>
+                <p>
+                    <strong>What I've learned:</strong> I learned about photo editing, graphic design, and digital art creation. Also, I could have experience of manipulating images, creating complex designs with layers, using selection tools for precision work, understanding color correction and grading, mastering retouching techniques, and exploring creative effects and filters. And it introduced me to the concept of non-destructive editing through adjustment layers, blending modes, and masks, enabling you to enhance or transform images while preserving the original data.
+                </p>
+            </article>
+            <div class="detail-image">
+                <img src="./images/ps-detail.png" alt="photoshop wireframe detailed picture">
+                <a href="./images/movie-app-mockup-dannykim.psd" target="blank">VISIT</a>
+            </div>
+        </div>
+      </section>
+      <a id="back-top" href="#"><img src="./images/arrow-up-solid.svg" alt="back to top button"></a>
+    </main>
+    
+    <footer id="contacts">
+        <div class="icon-wrapper">
+          <a href="mailto:everykaka@gmail.com" class="contact"
+            ><img src="images/email.svg" alt="email icon"
+          /></a>
+          <a href="https://www.linkedin.com/in/danny-kim-8150262a9/" target="_blank" class="contact"
+            ><img src="images/linkedin.svg" alt="linkedin icon"
+          /></a>
+          <a href="https://github.com/dannykim113" target="_blank" class="contact"
+            ><img src="images/github.svg" alt="github icon"
+          /></a>
+        </div>
+        <p>&#169;2024 Danny Kim</p>
+      </footer>
+</body>
+</html>
