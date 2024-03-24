@@ -53,6 +53,7 @@ function stackPrize() {
 }
 
 
+
 function checkGameEnd() {
     const targetLetters = selectedIdiom.split('').filter(char => char !== ' ');
     const guessedLettersWithoutSpaces = guessedLetters.filter(char => char !== ' ');
@@ -60,7 +61,7 @@ function checkGameEnd() {
 
     if (isWin) {
         stackPrize();
-        puzzleBoard.innerHTML = `Congratulations! <br> You have earned &#36;${currentPrize}!!`;
+        puzzleBoard.innerHTML = `Congratulations! <br> You have earned &#36;${prize.textContent}!!`;
         nextBtn.classList.toggle('active');
         letterContainer.classList.toggle('active');
         numChance.classList.toggle('active');
